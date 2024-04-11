@@ -1,0 +1,5 @@
+A
+It's fun!
+It's a good skill
+cls
+quit
