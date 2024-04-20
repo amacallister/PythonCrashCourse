@@ -8,7 +8,11 @@ while True:
     # Make a random walk.
     rw = RandomWalk()
     rw = RandomWalk(50_000)
-    rw.fill_walk()
+    x_direction_range = [1, -1]
+    y_direction_range = [1, 0]
+    x_steps = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    y_steps = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    rw.fill_walk(x_direction_range, y_direction_range, x_steps, y_steps)
 
     # Plot the points in the walk.
     plt.style.use('classic')
