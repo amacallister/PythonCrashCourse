@@ -25,8 +25,9 @@ print(f"Dates: {dates}")
 
 # Plot the high and low temperatures.
 fig, ax = plt.subplots()
-ax.plot(dates, highs, c="red")
-ax.plot(dates, lows, c="blue")
+ax.plot(dates, highs, c="red", alpha=0.5)
+ax.plot(dates, lows, c="blue", alpha=0.5)
+ax.fill_between(dates, highs, lows, facecolor="blue", alpha=0.1)
 
 # Format plot.
 ax.set_title("Daily high and low temperatures, - 2021", fontsize=24)
